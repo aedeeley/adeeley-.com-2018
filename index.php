@@ -105,6 +105,16 @@
                 <div class="clear"></div>
             </div>
             <div class="item right">
+                <img src="assets/img/work-academy.jpg" alt="Academy of Product Safety Attorneys" />
+                <div class="keeper">
+                    <h5>Academy of Product Safety Attorneys</h5>
+                    <h6>UI/UX, WORDPRESS THEME</h6>
+                    <p>With a nationally recognized faculty of product safety and consumer advocates, it is the mission of the Academy to inform the public on current safety issues, create greater accountability among companies who make products and to spur change to make products safer.</p>
+                    <a href="http://www.productsafetyacademy.org/" target="_blank" class="button">Visit Website</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="item">
                 <img src="assets/img/work-boston.jpg" alt="Boston Capital Leasing" />
                 <div class="keeper">
                     <h5>Boston Capital Leasing</h5>
@@ -113,7 +123,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <div class="item">
+            <div class="item right">
                 <img src="assets/img/work-covenant.jpg" alt="Covenant Life" />
                 <div class="keeper">
                     <h5>Covenant Life</h5>
@@ -123,7 +133,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <div class="item right last">
+            <div class="item last">
                 <img src="assets/img/work-pitch.jpg" alt="Pitch Publicity" />
                 <div class="keeper">
                     <h5>Pitch Publicity</h5>
