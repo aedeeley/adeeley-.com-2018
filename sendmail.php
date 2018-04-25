@@ -1,15 +1,13 @@
 <?php 
 $errors = '';
 
-$fname = $_POST['fname']; 
-$lname = $_POST['lname']; 
+$name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $phone = $_POST['phone']; 
 $message = $_POST['message']; 
 
 $myemail = 'alex@adeeley.com';//<-----Put Your email address here.
-if(empty($_POST['fname'])  || 
-   empty($_POST['lname'])  || 
+if(empty($_POST['name'])  || 
    empty($_POST['email'])  || 
    empty($_POST['phone'])  || 
    empty($_POST['message']))
@@ -34,11 +32,11 @@ if( empty($errors))
 
 $to = $myemail;
 
-$email_subject = "AD - Contact form submission from $fname $lname";
+$email_subject = "AD - Contact form submission from $name";
 
 $email_body = "You have received a new message. ".
 
-" Here are the details:\n Name: $fname $lname \n ".
+" Here are the details:\n Name: $name \n ".
 
 "Email: $email_address\n Phone: $phone\n Message \n $message";
 

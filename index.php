@@ -1,5 +1,28 @@
+<!--
+
+         .-;':':'-.
+        {'.'.'.'.'.}
+         )        '`.
+        '-. ._ ,_.-='    My brain is 
+          `). ( `);(
+          ('. .)(,'.)      just a jellyfish
+           ) ( ,').(
+          ( .').'(').    in the ocean 
+          .) (' ).('
+           '  ) (  ).      of my head!
+            .'( .)'
+              .).'
+
+
+© Copyright Alex Deeley 2018
+All content hand-coded with love!
+
+-->
+
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +48,45 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-        
+
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('ittztsym7whk');
+
+    </script>
+    <!-- End of Async Drift Code -->
 </head>
+
 <body>
     <header>
         <div class="wrapper">
@@ -57,13 +113,41 @@
                     <div>Join our newsletter, or <a href="#contact">get started right away!</a></div>
                 </form>
             </div>
+            <div class="downArrow bounce">
+                <a href="#about">
+                    <img alt="" src="assets/img/arrow.png" />
+                    </a>
+            </div>
     </header>
     <section id="about">
-        <div class="text-wrapper hr">
+        <div class="text-wrapper">
             <h3>About Me</h3>
             <h4>Design and development have become my passions in life.</h4>
             <p><img src="assets/img/headshot.png" alt="Me, Alex Deeley!" />I started my career in the year 2000 with a design firm in rural New Jersey. They introduced me to the industry standards of Macromedia/Adobe products and challenged my minimal development experience. A decade and a half later, I still feel like that 14 year old kid, trying to soak in as much knowledge as I can, while standing firm in what I do know. I've realized, in the last decade, that I can't imagine being in another field of work, because no other career requires constant adapting and learning the way the design field does. I've mastered many technologies and adapted to a plethora of job titles.
             </p>
+        </div>
+    </section>
+    <section id="brands">
+        <div class="text-wrapper">
+            <h4>Brands I've had the pleasure of working with.</h4>
+            <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": 3500 , "prevNextButtons": false  }'>
+                <div class="carousel-cell"><img src="assets/img/brands/3m.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/adobe.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/blu.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/cigarbar.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/cisco.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/greygoose.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/ibm.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/microsoft.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/nextgear.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/oracle.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/pdm.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/practimage.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/salesforce.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/samsung.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/smirnoff.png"></div>
+                <div class="carousel-cell"><img src="assets/img/brands/starbucks.png"></div>
+            </div>
         </div>
     </section>
     <section id="process">
@@ -149,16 +233,22 @@
         <div class="wrapper">
             <h3>Contact</h3>
             <h4>Ready to start a conversation?</h4>
+
+            <div class="left">
+                <p>Give me a call or drop an email. I strive to answer all inquiries within 24 hours on business days.</p>
+
+                <p>My office hours are 9am — 5pm<br />Monday through Friday.</p>
+
+            <p>E: <a href="mailto:info@adeeley.com">info@adeeley.com</a><br /> P: +1 813 480 2803</p>
+
+        </div>
+
+        <div class="right">
             <form method="post" action="sendmail.php" name="contactform">
-                <div class="half">
-                    <input type="input" class="half" id="fname" name="fname" />
-                    <label for="fname">First Name</label>
+                <div>
+                    <input type="input" id="name" name="name" />
+                    <label for="name">Name</label>
                 </div>
-                <div class="half">
-                    <input type="input" class="half" id="lname" name="lname" />
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="clear"></div>
                 <div>
                     <input type="input" id="email" name="email" />
                     <label for="email">Email</label>
@@ -168,11 +258,13 @@
                     <label for="phone">Telephone</label>
                 </div>
                 <div>
-                    <textarea id="message" name="message" rows="6"></textarea>
+                    <textarea id="message" name="message" rows="3"></textarea>
                     <label for="message">Message</label>
                 </div>
                 <input type="submit" id="submit" name="submit" value="Submit Form" />
             </form>
+        </div>
+        <div class="clear"></div>
         </div>
     </section>
     <section id="testimonial">
@@ -186,7 +278,7 @@
             <div class="clear"></div>
         </div>
     </section>
-    
+
     <footer>
         <div class="text-wrapper">
             <div class="left">
@@ -198,8 +290,8 @@
                     <li><a href="#contact">Get in Touch</a></li>
                 </ul>
                 <div class="bot"><img src="assets/img/logo-bottom.png" class="botlogo" alt="Alex Deeley logo" /> &copy; Copyright 2018 Alex Deeley. All Rights Reserved. </div>
-                
-   
+
+
             </div>
             <div class="right">
                 <a href="http://fb.me/aeddesigner" target="_blank"><img src="assets/img/icon-fb.png" alt="Facebook" /></a>
@@ -212,20 +304,26 @@
 
     <!-- javascripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/flickity.min.js"></script>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script language="JavaScript" src="assets/js/gen_validatorv31.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js"></script>
-    <script> 
+    <script>
+
+
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36901233-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
         gtag('config', 'UA-36901233-1');
+
     </script>
 </body>
+
 </html>
